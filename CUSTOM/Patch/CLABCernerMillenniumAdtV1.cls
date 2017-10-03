@@ -9,7 +9,7 @@ ClassMethod GetDisableItemList(ByRef pDisableList As %ListOfDataTypes) As %Statu
 	Try{
 		Set tStatus = pDisableList.Insert("FromClabCernerMillenniumAdtTcp:CLAB")
 	}catch (ex){
-		Set tStatus=ex.AsStatus() 
+		Set tStatus=ex.AsStatus()  
 	}
 	Quit tStatus
 }
